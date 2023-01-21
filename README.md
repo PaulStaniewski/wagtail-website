@@ -33,6 +33,21 @@ The website is divided into several sections, each of which can be easily edited
 - Footer section
 ![footer-admin](https://user-images.githubusercontent.com/31824304/213752901-0156af21-5b3d-4cbf-a7c4-d77a507a8066.JPG)
 
+# Installation
+
+    1.Download the project and unpack it.
+    2.Open it in Visual Studio Code or other code editor.
+    3.Open the terminal and navigate to the folder where the manage.py file is located.
+    4.Run the command .\Scripts\activate to activate the virtual environment.
+    5.In the blogsite/settings/dev.py file, change the SECRET_KEY value from SECRET_KEY = config("SECRET_KEY") to SECRET_KEY = "#YOUR KEY"
+    6.Run the command py .\manage.py createsuperuser to create a superuser account.
+    7.Run the command py .\manage.py runserver to start the development server and access the application on http://127.0.0.1:8000/
+
+Please note that you may need to install the necessary dependencies before running the application. You can do this by running the command pip install -r requirements.txt in the terminal.
+
+Also, it's necessary to have installed Python and Django in your machine to be able to run the application.
+
+Now you can access the application and customize it through the admin panel (http://127.0.0.1:8000/admin/) using the superuser credentials that you created.
 
 
 
