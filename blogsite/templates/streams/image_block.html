@@ -1,0 +1,16 @@
+{% load wagtailimages_tags %}
+
+{% for card in self.card %}  
+
+<div class="col-lg-4 col-sm-6">   
+    {% image card.image fill-635x350 as img %}                           
+    <a class="portfolio-box" href="{{ img.url }}" title="{{ card.title }}">
+        <img class="gallery-image" src="{{ img.url }}" alt="{{ img.alt }}">
+        <div class="portfolio-box-caption">            
+            <div class="project-name">{{ card.title }}</div>
+            <div class="project-desciption">{{ card.text }}</div>            
+        </div>
+    </a>
+</div>  
+
+{% endfor %}
